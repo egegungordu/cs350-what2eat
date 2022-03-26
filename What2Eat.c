@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 const int mainFoodListSize = 10;
-char *mainFoodList[mainFoodListSize] = {
+char* mainFoodList[] = {
 	"Pizza",
 	"Hamburger",
 	"Hot Dog",
@@ -75,7 +75,7 @@ int main()
 
 	int shortListSize = 0;
 	char* shortList[mainFoodListSize];
-	int scores[mainFoodListSize] = {0};
+	int scores[mainFoodListSize];
 
 	for(int i = 0; i < participantCount; i++)
 	{
@@ -111,7 +111,7 @@ int main()
 			selectFood(participantCount, preferencesShort[i], shortListSize);
 		}
 
-		int scoresShort[mainFoodListSize] = {0};
+		int scoresShort[mainFoodListSize];
 
 		for(int i = 0; i < participantCount; i++)
 		{
