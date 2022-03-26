@@ -76,6 +76,8 @@ int main()
 	int shortListSize = 0;
 	char* shortList[mainFoodListSize];
 	int scores[mainFoodListSize];
+	for(int i = 0; i < mainFoodListSize; i++)
+		scores[i] = 0;
 
 	for(int i = 0; i < participantCount; i++)
 	{
@@ -112,6 +114,8 @@ int main()
 		}
 
 		int scoresShort[mainFoodListSize];
+		for(int i = 0; i < mainFoodListSize; i++)
+			scoresShort[i] = 0;
 
 		for(int i = 0; i < participantCount; i++)
 		{
